@@ -267,7 +267,7 @@ This code is released under the Apache License 2.0.
 The licenses for datasets used in the paper are available at the following links: [iVQA](https://github.com/antoyang/just-ask/blob/main/LICENSE), [MSRVTT-QA](https://github.com/xudejing/video-question-answering/blob/master/LICENSE), [MSVD-QA](https://github.com/xudejing/video-question-answering/blob/master/LICENSE), [ActivityNet-QA](https://github.com/MILVLG/activitynet-qa/blob/master/LICENSE), [How2QA](https://github.com/ych133/How2R-and-How2QA/blob/master/LICENSE) and [TVQA](https://github.com/jayleicn/TVQA/blob/master/LICENSE).
 
 ## Citation 
-If you found this work useful, consider giving this repository a star and citing our papers as followed:
+If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
 @inproceedings{yang2022frozenbilm,
 title={Zero-shot Video Question Answering via Frozen Bidirectional Language Models},
