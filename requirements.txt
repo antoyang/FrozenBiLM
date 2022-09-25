@@ -1,0 +1,11 @@
+clip==1.0
+jsonlines==3.0.0
+numpy==1.21.6
+pandas==1.4.1
+Pillow==9.0.1
+scikit-learn==1.0.2
+scipy==1.8.0
+sentencepiece==0.1.96
+tokenizers==0.11.6
+tqdm==4.63.1
+transformers==4.17.0
