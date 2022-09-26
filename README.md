@@ -7,8 +7,7 @@ This repository provides the code for our FrozenBiLM paper (NeurIPS 2022), inclu
 - Data downloading instructions
 - Data preprocessing and visual feature extraction scripts, as well as preprocessed data and features
 - Pretrained checkpoints
-- Evaluation scripts for zero-shot VideoQA
-- Training and evaluation scripts for cross-modal training, downstream fully-supervised and few-shot VideoQA
+- Training and evaluation scripts for cross-modal training, downstream fully-supervised, few-shot and zero-shot VideoQA, including various baselines
 
 ## Setup
 To install requirements, run:
