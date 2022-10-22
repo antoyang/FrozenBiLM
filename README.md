@@ -2,6 +2,10 @@
 
 [Webpage](https://antoyang.github.io/frozenbilm.html) • [Paper](https://arxiv.org/abs/2206.08155) 
 
+![Teaser](https://antoyang.github.io/img/frozenbilm-header.png)
+
+FrozenBiLM is a new architecture for video question answering that builds on a frozen bidirectional language model. It excels in settings without any manual annotation (zero-shot) or with limited training data (few-shot), while performing competitively when trained on standard datasets (fully-supervised).
+
 This repository provides the code for our FrozenBiLM paper (NeurIPS 2022), including:
 - Environment setup
 - Data downloading instructions
