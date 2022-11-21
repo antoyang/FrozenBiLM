@@ -4,7 +4,7 @@
 
 ![Teaser](https://antoyang.github.io/img/frozenbilm-header.png)
 
-FrozenBiLM is a new architecture for video question answering that builds on a frozen bidirectional language model. It excels in settings without any manual annotation (zero-shot) or with limited training data (few-shot), while performing competitively when trained on standard datasets (fully-supervised).
+FrozenBiLM is a new model for video question answering that builds on a frozen bidirectional language model. FrozenBiLM excels in settings without any manual annotation (zero-shot) or with limited training data (few-shot), while performing competitively when trained on standard datasets (fully-supervised).
 
 This repository provides the code for our FrozenBiLM paper (NeurIPS 2022), including:
 - Environment setup
@@ -12,6 +12,7 @@ This repository provides the code for our FrozenBiLM paper (NeurIPS 2022), inclu
 - Data preprocessing and visual feature extraction scripts, as well as preprocessed data and features
 - Pretrained checkpoints
 - Training and evaluation scripts for cross-modal training, downstream fully-supervised, few-shot and zero-shot VideoQA, including various baselines
+- VideoQA demo script
 
 ## Setup
 To install requirements, run:
@@ -260,6 +261,17 @@ Pass `--ft_lm --ft_mlm --ds_factor_ff=0 --ds_factor_attn=0 --batch_size=1` for t
 ## Few-shot VideoQA
 For few-shot VideoQA, we sample a subpart of the train dataframe file and change `--<dataset>_train_csv_path`.  
 The random subsets used in the paper are released [here](https://drive.google.com/drive/folders/1ED2VcFSxRW9aFIP2WdGDgLddNTyEVrE5?usp=sharing).
+
+## VideoQA Demo
+Using a trained checkpoint, you can also run a VideoQA example with a video file of your choice, and the question of your choice. For that, use (the answer vocabulary is taken from msrvtt_vocab_path):
+```
+python demo_videoqa.py --combine_datasets msrvtt --combine_datasets_val msrvtt \
+--suffix="." --max_tokens=256 --ds_factor_ff=8 --ds_factor_attn=8 \
+--load=<CKPT_PATH> --msrvtt_vocab_path=<VOCAB_PATH> \
+--question_example <question> --video_example <video_path>
+```
+
+This demo can run on CPUs, with at least 4 physical cores. For this, use `--device='cpu'`. Note that this demo does not use speech input which would require using an off-the-shelf ASR extractor.
 
 ## Acknowledgements
 The transformer models implementation is inspired by [Hugging Face's transformers library](https://github.com/huggingface/transformers).   

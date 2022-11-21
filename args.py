@@ -454,4 +454,18 @@ def get_args_parser():
         help="suffix after the answer mask for videoqa",
     )
 
+    # Demo
+    parser.add_argument(
+        "--question_example",
+        default="",
+        type=str,
+        help="question example for demo",
+    )
+    parser.add_argument(
+        "--video_example",
+        default="",
+        type=str,
+        help="path to a video example for demo",
+    )
+
     return parser
