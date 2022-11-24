@@ -2,7 +2,7 @@ clip
 jsonlines==3.0.0
 numpy==1.21.6
 pandas==1.4.1
-Pillow==9.0.1
+Pillow==9.3.0
 scikit-learn==1.0.2
 scipy==1.8.0
 sentencepiece==0.1.96
