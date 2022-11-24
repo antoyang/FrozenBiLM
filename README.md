@@ -20,7 +20,7 @@ To install requirements, run:
 conda create -n frozenbilm_env python=3.8 
 conda activate frozenbilm_env
 conda install pytorch==1.8.1 torchvision==0.9.1 cudatoolkit=11.1 -c pytorch -c nvidia 
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 You may fill the global paths in `args.py`.   
 To use a given text-pretrained language model, you should download the corresponding weights from the Hugging Face Hub and put them in `TRANSFORMERS_CACHE`.

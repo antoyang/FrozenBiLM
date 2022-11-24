@@ -1,4 +1,4 @@
-clip==1.0
+clip
 jsonlines==3.0.0
 numpy==1.21.6
 pandas==1.4.1
