@@ -34,6 +34,7 @@ To download pretrained checkpoints, pre-processed data, ASR and visual features,
 bash download/download_checkpoints.sh <MODEL_DIR>
 bash download/download_downstream.sh <DATA_DIR>
 ```
+If you have issues with gshell, you can access the processed data [here](https://drive.google.com/drive/folders/1ED2VcFSxRW9aFIP2WdGDgLddNTyEVrE5?usp=sharing)  and the checkpoints [here](https://drive.google.com/drive/folders/10Vosd_h6afVf-OSZmwVeTCQReZwpAUJT?usp=sharing).  
 It requires about 8GB for the models, and 12GB for the data.  
 Note that most pretrained checkpoints only contain updated parameters due to storage limitations (and not the frozen parameters).  
 This means you have to make sure that you have properly downloaded weights from Hugging Face for the language model of your choice when using a provided checkpoint.  
