@@ -287,8 +287,7 @@ If you found this work useful, consider giving this repository a star and citing
 ```
 @inproceedings{yang2022frozenbilm,
 title = {Zero-Shot Video Question Answering via Frozen Bidirectional Language Models},
-author = {Yang, Antoine and Miech, Antoine and Sivic, Josef and Laptev, Ivan and Schmid, Cordelia},
-booktitle={Advances in Neural Information Processing Systems}
-year = {2022},
-}
+author = {Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
+booktitle={NeurIPS}
+year = {2022}}
 ```
