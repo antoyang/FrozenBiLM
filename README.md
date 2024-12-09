@@ -286,8 +286,9 @@ The licenses for datasets used in the paper are available at the following links
 If you found this work useful, consider giving this repository a star and citing our paper as followed:
 ```
 @inproceedings{yang2022frozenbilm,
-title = {Zero-Shot Video Question Answering via Frozen Bidirectional Language Models},
-author = {Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
-booktitle={NeurIPS}
-year = {2022}}
+  title = {Zero-Shot Video Question Answering via Frozen Bidirectional Language Models},
+  author = {Antoine Yang and Antoine Miech and Josef Sivic and Ivan Laptev and Cordelia Schmid},
+  booktitle={NeurIPS},
+  year = {2022}
+}
 ```
